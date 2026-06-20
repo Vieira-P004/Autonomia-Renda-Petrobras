@@ -1,3 +1,5 @@
+import { calculoDesconto } from "./script_calculos.js"
+
 //DECLARANDO UM ARRAY DE OBJ PESSOAS
 const pessoas = []
 
@@ -40,9 +42,10 @@ formPessoa.addEventListener('submit', (evt) => {
     const listPessoa = () => {
         divPessoa.innerHTML = ''
 
+        //ForEach está lendo e percorrendo o array
         pessoas.forEach((elem, i) =>{
-            divPessoa.innerHTML += `${i+1} ${elem.nome} ${elem.idade} 
+            divPessoa.innerHTML += `<div class = 'item-pessoa'> ${i+1} ${elem.nome} ${elem.idade} 
             R$ ${parseFloat(elem.renda)
-             .toFixed(2).replace('.',',')} <br>`
+             .toFixed(2).replace('.',',')} ${calculoDesconto(elem)} <br> </div>`
         })
     }
