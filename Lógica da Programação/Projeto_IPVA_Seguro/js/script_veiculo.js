@@ -1,3 +1,4 @@
+import { calculoIPVA } from "./script_calculo.js";
 const  veiculo = []
 
 const formDados = document.querySelector('#formulario');
@@ -14,15 +15,14 @@ formDados.addEventListener('submit', (evt) => {
         placa: veiculoDados.get('placa'),
         modelo: veiculoDados.get('modelo'),
         marca: veiculoDados.get('marca'),
-        ano: veiculoDados.get('ano'),
-        mercado: veiculoDados.get('mercado'),
+        ano: Number(veiculoDados.get('ano')),
+        mercado: Number(veiculoDados.get('mercado')),
         combustivel: veiculoDados.get('combustivel')
     }
 
     addCarro(carro);
 
 } )
-
 
   //FUNÇÃO ADD CARRINHOS
   const addCarro = (objCarro) =>{
@@ -31,10 +31,18 @@ formDados.addEventListener('submit', (evt) => {
 
     }
 
-
     const listarCarros = () => {
+        resultado.innerHTML = '';
 
-        veiculo.forEach((elem, i) => {
-            resultado.innerHTML += `${i+1} ${elem.placa} ${elem.modelo} ${elem.marca} ${elem.ano}`
+        veiculo.forEach((carro, i) => {
+            const valorIPVA = calculoIPVA(carro);
+            resultado.innerHTML = `
+            ${i+1} - Placa:
+            ${carro.placa} | Modelo:
+            ${carro.modelo} | Marca: 
+            ${carro.marca} | Ano:
+            ${carro.ano}|
+            ${valorIPVA}
+            <br>`
         })
-    }
+    } 

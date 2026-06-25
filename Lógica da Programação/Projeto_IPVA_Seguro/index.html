@@ -28,20 +28,19 @@
 
         <h3>Tipo de Combustível</h3>
         
-        <label><input type="radio" name="combustivel" value="gasolina" checked><span>Gasolina</span></label>
+        <label class="opCombustivel"><input type="radio" name="combustivel" value="gasolina" checked><span>Gasolina</span></label>
 
-        <h1>usoda</h1>
-        <label for="">Etanol</label>
-        <input type="radio" name="combustivel" value="etanol">
+        <label class="opCombustivel"><input type="radio" name="combustivel" value="etanol" ><span>Etanol</span></label>
+        
 
-        <label for="">Bio Combustível</label>
-        <input type="radio" name="combustivel" value="biocombustivel">
+        <label class="opCombustivel"><input type="radio" name="combustivel" value="biocombustivel" ><span>Bio Combustível</span>
+</label>
+       
+        <label class="opCombustivel"><input type="radio" name="combustivel" value="hibrido" ><span>Híbrido</span></label>
+        
 
-        <label for="">Híbrido</label>
-        <input type="radio" name="combustivel" value="hibrido">
-
-        <label for="">Elétrico</label>
-        <input type="radio" name="combustivel" value="eletrico">
+        <label class="opCombustivel"><input type="radio" name="combustivel" value="eletrico" ><span>Elétrico</span></label>
+        
 
         <button type="submit">Enviar cadastro</button>
     </form>
@@ -49,7 +48,7 @@
     <div id="resultado"></div>
     </div>
 
-    <script src="/js/script_calculo.js"></script>
-    <script src="/js/script_veiculo.js"></script>
+    <script src="/js/script_calculo.js" type="module"></script>
+    <script src="/js/script_veiculo.js" type="module"></script>
 </body>
 </html>
