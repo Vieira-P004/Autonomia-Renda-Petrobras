@@ -32,7 +32,8 @@ const listarColetas = () => {
     coletaResiduo.forEach((coleta, i) =>{
         const coletaPremia = calculoPremiacao(coleta)
         const dinheiroColeta = valorReceber(coleta)
-        const valorAReceber = valorFinal(coleta)
+        const valorAReceber = coletaPremia + dinheiroColeta
+
 
         resultado.innerHTML += `
         ${i+1} - Descrição: 
@@ -40,7 +41,7 @@ const listarColetas = () => {
         ${coleta.quantidade} | Valor Receber: R$
         ${dinheiroColeta}| Premiação: R$
         ${parseFloat(coletaPremia).toFixed(2)} | Valor final R$ 
-        ${valorAReceber} 
+        ${parseFloat(valorAReceber).toFixed(2)} 
         <br>
         `
 
