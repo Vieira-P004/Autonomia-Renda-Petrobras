@@ -1,0 +1,29 @@
+/*
+selector{
+    propriedade: valor;
+    propriedade: valor;
+}
+*/
+
+p{ /*APLICANDO COM TAG*/
+    font-family:  Helveti ca;
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 35px;
+}
+
+#paragrafo01{ /*APLICANDO COM ID*/
+    margin-left: 200px;
+}
+
+#paragrafo02{
+    margin-left: 200px;
+}
+
+.paragrafos{ /*APLICANDO COM CLASS*/
+    color: rgb(32, 228, 162);
+}
+
+.especial{ /*APLICANDO COM CLASS*/
+    background-color: bisque;
+}
