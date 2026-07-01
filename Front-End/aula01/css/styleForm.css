@@ -45,6 +45,7 @@ input[type="radio"], input[type="checkbox"]{
     min-height: 600px;
     margin: 20px auto;
     padding: 20px;
+    font-size: 1.4em;
 }
 
 #divBtns{
