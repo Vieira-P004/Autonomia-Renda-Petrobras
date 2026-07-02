@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /*FECHA UM TAMANHO*/
+    font-family: Roboto;
+}
+
+:root{
+    --azul: #0077B6;
+    --turquesa: #00B4D8;
+    --branco: #ffffff;
+    --areia: #F4E1C1;
+}
+
+#geral{
+    margin: 20px;
+    padding: 20px;
+}
+
+#cabecalho{
+    background-color: var(--azul);
+    width: 100%; /*ESTÁ 100% DA LARGURA*/
+    /*height: 200px; ESTÁ 200PX DE ALTURA*/
+    padding: 5px;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center; /*SÓ FUNCIONA QUANDO O DISPLAY TÁ FLEX*/
+}
+
+#logo img{
+    width: 250px;
+}
+
+#menu{
+    color: var(--branco);
+    width: 600px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cabecalho ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+#divIcons img{
+    width: 30px;
+}
+
+#menu a:link{
+    font-size: 1.3em;
+    text-decoration: none;
+    color: var(--branco);
+} 
+
+#menu a:visited{
+    font-size: 1.3em;
+    text-decoration: none;
+    color: var(--branco);
+}
+
+#menu a:hover{
+    font-size: 1.6em;
+    text-decoration: none;
+    color: var(--areia);
+}
+
+#pesquisa{
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pesquisa input{
+    width: 60%;
+    height: 80px;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 2em;
+}
