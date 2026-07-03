@@ -23,11 +23,10 @@
     background-color: var(--azul);
     width: 100%; /*ESTÁ 100% DA LARGURA*/
     /*height: 200px; ESTÁ 200PX DE ALTURA*/
-    padding: 5px 25px;
+    padding: 5px;
     margin: 20px 0px;
     display: flex;
-    justify-content: space-between; /*SÓ FUNCIONA QUANDO O DISPLAY TÁ FLEX*/
-    align-items: center;
+    justify-content: center; /*SÓ FUNCIONA QUANDO O DISPLAY TÁ FLEX*/
 }
 
 #logo img{
@@ -71,76 +70,67 @@
     color: var(--areia);
 }
 
-#pesquisa{
-    width: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#pesquisa input{
-    width: 60%;
-    height: 60px;
-    padding: 20px;
-    border-radius: 8px;
-    font-size: 2em;
-}
-
-#cards{
-    
+/*==================FORMS=================*/
+#form{
     width: 1000px;
+    margin: 20px;
     min-height: 600px;
-    margin: 20px 0px;
-    padding: 10px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 20px;
+    border: 1px solid var(--azul);
 }
 
-.card{
-    width: 250px;
-    min-height: 250px;
-    border: 2px solid ;
-    padding: 5px;
+#form h1, h5{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px 0px;
+}
+
+label{
     display: flex;
     flex-direction: column;
+    margin: 20px 0px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.input01, .input02{
+    font-size: 1.3em; 
+    padding: 5px;
+}
+
+.input01{
+    width: 450px;
+}
+
+.input02{
+    width: 400px;
+}
+
+#btnDiv{
+    height: 60px;
+    margin: 40px 0px;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.card:hover{
-    transform:  translateY(-5px);
-}
-
-.card img{
-    width: 100%;
-    
-}
-
-.card h2{
-    letter-spacing: 3px;
-    margin: 10px 0px;
-}
-
-.card h3{
-    margin: 20px 0px;
-}
-
-.card button{
-    width: 100%;
-    height: 25px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.card button:hover{
+#btnDiv button{
+    width: 200px;
+    height: 40px;
+    margin-left: 20px;
     background-color: var(--turquesa);
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 0.8em;
+    letter-spacing: 5px;
 }
 
-.card img{
-    width: 100%;
+.oculto{
+    display: none;
 }
 
+/*=================RODAPÉ=================*/
 #rodape{
     width: 100%;
     height: 300px;
@@ -159,8 +149,8 @@
 }
 
 #iconSociais img{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     margin-left: 50px;
 }
 
@@ -168,5 +158,3 @@
     width: 25px;
     height: 25px;
 }
-
-

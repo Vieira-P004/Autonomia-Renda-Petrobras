@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arara Wave</title>
+    <link rel="shortcut icon" href="/img/icones/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/cadastro.css">
+</head>
+<body>
+    <main id="geral">
+        <header id="cabecalho">
+            <div id="logo">
+                <a href="/index.html">
+                    <img src="/img/icones/pngAraraRemovido.png" alt="logo">
+                </a>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li>
+                        <a href="index.html" class="linkMenu">HOME</a></li>
+                    <li>
+                        <a href="paginas/cadastro.html" class="linkMenu">CADASTRO</a>
+                    </li>
+                    <li>
+                        <a href="paginas/SOBRE" class="linkMenu">SOBRE</a>
+                    </li>
+
+                    <!--
+                    <li>PRODUTOS</li>
+                    <li>CATEGORIAS</li>
+                    <li>OFERTAS</li>
+                    <li>SOBRE</li>
+                    -->
+                </ul>
+            </nav>
+
+            <div id="divIcons">
+                <ul>
+                    <li>
+                        <a href="/paginas/login.html" class="linkIncon"> 
+                            <img src="/img/icones/login.png" alt="" width="20px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/paginas/carrinho.html" class="linkIncon">
+                            <img src="/img/icones/carrinho.png" alt="" width="20px">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--<h1>ARARA WAVE</h1>-->              
+        </header>
+
+        <section id="form">
+            <h1>criar nova conta</h1>
+            <h5>Preencha seus dados abaixo para se cadastrar.</h5> 
+
+            <form id="formCadastro">
+                <label for="nome">Nome Completo</label>
+            <input type="text" name="nome" id="nome" class="input01" required>
+
+            <label for="cpf">CPF</label>
+            <input type="number" name="CPF" id="CPF" maxlength="14" class="input02" required>
+
+            <label for="dataNasc">Data Nascimento</label>
+            <input type="date" name="dataNasc" id="dataNasc" class="input01" required>
+
+            <label for="sexo">Sexo</label>
+            <input type="radio" name="sexo" id="sxF" required value="F">Feminino
+            <input type="radio" name="sexo" id="sxM" required value="M">Masculino
+
+            <label for="cep">CEP</label>
+            <input type="number" name="cep" id="cep" required maxlength="9"> 
+
+            <div id="dadosEndereco" class="oculto">
+                <label for="logradouro">logradouro</label>
+                <input type="text" name="logradouro" id="logradouro" class="input01">
+
+                <label for="numResidencia">Número</label>
+                <input type="text" name="nem" id="logradouro" class="input01">
+
+                <label for="logradouro">Complemento</label>
+                <input type="text" name="logradouro" id="logradouro" class="input01">
+
+                <label for="bairro">Bairro</label>
+                <input type="text" name="bairro" id="bairro" class="input01">
+
+                <label for="localidade">Localidade</label>
+                <input type="text" name="localidade" id="localidade" class="input01">
+
+                <label for="uf">UF</label>
+                <input type="text" name="uf" id="uf" class="input01">
+            </div>
+
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha">
+
+            <div id="btnDiv">
+                <button type="submit" id="btnAdd">Cadastrar</button>
+                <button type="reset" id="btnLimpar">Limpar</button>
+            </div>
+            </form>
+            
+    
+        </section>
+        <footer id="rodape">
+            <div id="dadoLoja">
+                <h2>Rua Maria Fernandinha, 1201 - Atalaia</h2>
+                <h1>Aracaju - Sergipe</h1>
+            </div>
+
+            <div id="iconSociais">
+                <ul>
+                    <li>
+                        <a href="https://www.instagram/araraWave">
+                            <img src="/img/icones/instagram.png" alt="instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/araraWave">
+                            <img src="/img/icones/facebook.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="cartao">
+                <img src="/img/icones/pix.png" alt="Pix">
+                <img src="/img/icones/visa.png" alt="Visa">
+                <img src="/img/icones/mastercard.png" alt="Mastercard">
+                <img src="/img/icones/hipercard.png" alt="Hipercard">
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
