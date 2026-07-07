@@ -166,10 +166,9 @@
 }
 
 #compra{
+    width: 250px;
     display: flex;
-    flex-direction: row;
-    width: 90px;
-    height: 40px;
+    
 }
 
 .colunaTotal{
