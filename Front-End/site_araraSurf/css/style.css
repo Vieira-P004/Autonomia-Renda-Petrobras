@@ -17,12 +17,11 @@
 #cabecalho{
     background-color: var(--azul);
     width: 100%; /*ESTÁ 100% DA LARGURA*/
-    /*height: 200px; ESTÁ 200PX DE ALTURA*/
     padding: 5px 25px;
-    margin: 20px 0px;
     display: flex;
     justify-content: space-between; /*SÓ FUNCIONA QUANDO O DISPLAY TÁ FLEX*/
     align-items: center;
+    margin-bottom: 20px;
 }
 
 #logo img{
@@ -48,7 +47,7 @@
     width: 30px;
 }
 
-#menu a:link{
+#menu a:link {
     font-size: 1.3em;
     text-decoration: none;
     color: var(--branco);
@@ -71,6 +70,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: auto;
 }
 
 #pesquisa input{
@@ -82,24 +82,25 @@
 }
 
 #cards{
-    
     width: 900px;
     min-height: 600px;
-    margin: 20px 0px;
+    margin: auto;
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
 }
 
 .card{
     width: 250px;
     min-height: 200px;
-    border: 2px solid ;
+    box-shadow: 0 10px 25px rgba(0, 94, 145, 0.466);
     padding: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 8px;
 }
 
 .card:hover{
@@ -180,3 +181,28 @@
    padding: 30px;
 }   
 
+#nav-secoes{
+    background-color: var(--azul);
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 25px;
+    align-items: center;
+}
+
+#menu-secoes{
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+    list-style: none;
+}
+
+.lnk-secao{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.3em;
+}
+
+#paiDeTodos{
+   margin: auto;
+}

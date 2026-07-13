@@ -13,7 +13,7 @@
 }
 
 .imgCardCompra{
-    width: 200px;
+    width: 190px;
 }
 
 #navCompras{
@@ -27,8 +27,8 @@
 }
 
 #divResumoPag{
-    width: 350px;
-    height: 550px;
+    width: 250px;
+    height: 580px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 3);
     padding: 10px;
@@ -49,10 +49,19 @@ hr{
     color: #ffffff;
     padding: 5px;
     border-radius: 8px;
-    margin-left: 9px;
+    margin-top: 10px;
+
 }
 
 input{
     border-radius: 8px;
     padding: 8px;
+}
+
+#btnFinalizarCompra{
+    background-color: var(--azul);
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 8px;    
+    margin-top: 10px;
 }
