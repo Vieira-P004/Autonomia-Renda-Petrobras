@@ -1,0 +1,58 @@
+:root{
+    --azul: #0077B6;
+    --turquesa: #00B4D8;
+    --branco: #ffffff;
+    --areia: #F4E1C1;
+}
+
+#secGeral{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+.imgCardCompra{
+    width: 200px;
+}
+
+#navCompras{
+    width: 1300px;
+}
+
+.cardCompras{
+    border: 1px solid;
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+#divResumoPag{
+    width: 350px;
+    height: 550px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 3);
+    padding: 10px;
+}
+
+h5{
+    padding-top: 15px;
+}
+
+hr{
+    color: rgb(187, 186, 186);
+    width: 220px;
+    margin-top: 15px;
+}
+
+#cepBtn{
+    background-color: var(--azul);
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 8px;
+    margin-left: 9px;
+}
+
+input{
+    border-radius: 8px;
+    padding: 8px;
+}
