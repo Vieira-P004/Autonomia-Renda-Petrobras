@@ -1,4 +1,6 @@
 import {produtos} from "./produto.js";
+import { addItem } from "./carrinho.js";
+
 
 const sectionCards = document.querySelector('#cards');
 
@@ -124,6 +126,9 @@ const montandoCards =  (objProdutos) => {
         btnCard.addEventListener('click', () => {
             //REDIRECIONA PARA PÁGINA carrinho.html
             window.location.href = "/paginas/carrinho.html"
+            //ADD UM OBJETO NO CARRINHO
+            addItem(elem)
+            
         })
 
         divCard.appendChild(imgProduto)
