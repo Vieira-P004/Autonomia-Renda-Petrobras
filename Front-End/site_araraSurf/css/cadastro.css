@@ -14,21 +14,6 @@
     --areia: #F4E1C1;
 }
 
-#geral{
-    margin: 20px;
-    padding: 20px;
-}
-
-#cabecalho{
-    background-color: var(--azul);
-    width: 100%; /*ESTÁ 100% DA LARGURA*/
-    /*height: 200px; ESTÁ 200PX DE ALTURA*/
-    padding: 5px;
-    margin: 20px 0px;
-    display: flex;
-    justify-content: center; /*SÓ FUNCIONA QUANDO O DISPLAY TÁ FLEX*/
-}
-
 #logo img{
     width: 250px;
 }
@@ -73,10 +58,10 @@
 /*==================FORMS=================*/
 #form{
     width: 1000px;
-    margin: 20px;
     min-height: 600px;
     padding: 20px;
     border: 1px solid var(--azul);
+    margin: auto;
 }
 
 #form h1, h5{

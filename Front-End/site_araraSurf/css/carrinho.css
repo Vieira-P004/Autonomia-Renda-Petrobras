@@ -12,8 +12,12 @@
     margin-left: 20px;
 }
 
-.imgCardCompra{
-    width: 190px;
+.img-item{
+    width: 80px;
+}
+
+.img-remover{
+    width: 20px;
 }
 
 #navCompras{
@@ -24,8 +28,21 @@
     border: 1px solid;
     width: 70%;
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
 }
 
+.cardCompras input{
+    height: 30px;
+    width: 50px;
+}
+
+.img-remover[
+    wi
+]
+
+/* CARD PAGAMENTO*/
 #divResumoPag{
     width: 250px;
     height: 580px;
