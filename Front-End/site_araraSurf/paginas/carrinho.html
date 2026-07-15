@@ -7,6 +7,8 @@
     <link rel="shortcut icon" href="/img/icones/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/carrinho.css">
+
+    <script type="module" src="/js/telaCarrinho.js" defer></script>
 </head>
 <body>
     <main id="geral">
@@ -57,46 +59,16 @@
 
         <section id="secGeral">
             <section id="navCompras">
-            
-                <div class="cardCompras">
-                    <img src="/img/fish/fish03.jpg" alt="Prancha Fish 03" class="imgCardCompra">
-                    <h4 class="tituloCardCompra">Prancha Fish 03</h4>
-                    <p class="valorCardCompra">
-                        R$ 1600,00
-                    </p>
-                    <div>
-                        <button class="btnCardCompra">-</button>
-                        <input type="number">
-                        <button class="btnCardCompra">+</button>
-                    </div>
-                </div>
     
-                <div class="cardCompras">
-                    <img src="/img/fish/fish05.jpg" alt="Prancha Fish 05" class="imgCardCompra">
-                    <h4 class="tituloCardCompra">Prancha Fish 05</h4>
-                    <p class="valorCardCompra">
-                        R$ 2000,00
-                    </p>
-                    <div>
-                        <button class="btnCardCompra">-</button>
-                        <input type="number">
-                        <button class="btnCardCompra">+</button>
-                    </div>
-                    
-                </div>
+                <section class="cardCompras">
+                    <img src="/img/fish/fish05.jpg" alt="Prancha Fish 05" class="img-item">
+                    <p class="descricao">Prancha Fish 05</p>
+                    <p class="vlr-unitario">R$ 2000,00</p>
+                    <input type="number" name="quant1" id="quant1" class="input-item" value="1">
+                    <p class="tot-item">R$ 2000,00</p>
+                    <img src="/img/icones/remover.png" alt="img-remover" class="img-remover">
+                </section>
     
-                <div class="cardCompras">
-                    <img src="/img/shortBoard/short01.jpg" alt="Prancha ShortBoard 01" class="imgCardCompra">
-                    <h4 class="tituloCardCompra">Prancha Short 01</h4>
-                    <p class="valorCardCompra">
-                        R$ 2000,00
-                    </p>
-                    <div>
-                        <button class="btnCardCompra">-</button>
-                        <input type="number">
-                        <button class="btnCardCompra">+</button>
-                    </div>
-                </div>
             </section>
 
             <section id="pagamento">
@@ -137,21 +109,21 @@
                 <ul>
                     <li>
                         <a href="https://www.instagram/araraWave">
-                            <img src="img/icones/instagram.png" alt="instagram">
+                            <img src="/img/icones/instagram.png" alt="instagram">
                         </a>
                     </li>
                     <li>
                         <a href="https://www.facebook.com/araraWave">
-                            <img src="img/icones/facebook.png" alt="">
+                            <img src="/img/icones/facebook.png" alt="">
                         </a>
                     </li>
                 </ul>
             </div>
             <div id="cartao">
-                <img src="img/icones/pix.png" alt="Pix">
-                <img src="img/icones/visa.png" alt="Visa">
-                <img src="img/icones/mastercard.png" alt="Mastercard">
-                <img src="img/icones/hipercard.png" alt="Hipercard">
+                <img src="/img/icones/pix.png" alt="Pix">
+                <img src="/img/icones/visa.png" alt="Visa">
+                <img src="/img/icones/mastercard.png" alt="Mastercard">
+                <img src="/img/icones/hipercard.png" alt="Hipercard">
             </div>
         </footer>
     </main>
