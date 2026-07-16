@@ -10,11 +10,11 @@ const montaTelaCarrinho = () => {
         const sectionItem = document.createElement('section')
         sectionItem.setAttribute('class', 'cardCompras')
         sectionItem.innerHTML = 
-        `<img src='${elem.carrinho_da_imagem}' 
+        `<img src= '${elem.carrinho_da_imagem}' 
         alt= ${elem.descricao_Produto} class="img-item" />
-        <p class = 'descricao'> ${elem.descricao_Produto}</p>
-         <p class = 'vlr-unitario'>R$ ${elem.valor_unitario}</p> 
-         <input type = "number" name ='quant${i}' id= 'quant${i}' class= "input-item" value=${1}> 
+        <p class = "descricao" > ${elem.descricao_Produto}</p>
+         <p class = "vlr-unitario">R$ ${elem.valor_unitario}</p> 
+         <input type = "number" name ='quant${i}' id= 'quant${i}' class="input-item" value=${elem.quatidade}> 
          <p class= "tot-item">R$ ${elem.valor_unitario * 1} </p>
         <img src = "/img/icones/remover.png" alt ="img-remover" class="img-remover"`
         

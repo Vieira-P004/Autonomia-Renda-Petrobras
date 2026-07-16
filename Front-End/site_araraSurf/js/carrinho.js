@@ -1,9 +1,26 @@
 //CRIANDO ARRAY DE ITENS DO CARRINHO
 const itensCarrinho = JSON.parse(localStorage.getItem('itensSessao')) || []
 
-//FINCAO PARA ADICIONAR O ITEM NO ARRAY
+//CRIANDO ARROW ITEM
+const fObjItem = (objProduto) => {
+    const item = {
+        id_produto: objProduto.id_produto,
+        descricao_Produto: objProduto.descricao_Produto,
+        carrinho_da_imagem: objProduto.carrinho_da_imagem,
+        valor_unitario: objProduto.valor_unitario,
+        quantidade: 1
+    }
+
+    return item
+}
+//PEGANDO O INDICE DO ARRAY
+//FINDINDEX RETORNA A POSIÇÃO DO ARRAY
+//console.log("indice do array --->", itensCarrinho.findIndex(elem => elem.id_produto == 1))
+
+//FUNCAO PARA ADICIONAR O ITEM NO ARRAY
 const addItem = (objItem) => {
-    itensCarrinho.push(objItem)
+    itensCarrinho.push(fObjItem(objItem))
+    //to alterando
 
     localStorage.setItem('itensSessao', JSON.stringify(itensCarrinho))
 }
