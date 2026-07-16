@@ -26,21 +26,22 @@
 
 .cardCompras{
     border: 1px solid;
-    width: 70%;
+    width: 59%;
     margin-bottom: 10px;
     display: flex;
-    flex-direction: row;
+    align-items: center;
     gap: 50px;
 }
 
 .cardCompras input{
-    height: 30px;
     width: 50px;
+    height: 30px;
 }
 
-.img-remover[
-    wi
-]
+.cardCompras .img-remover{
+    width: 30px;
+    height: 20px;
+}
 
 /* CARD PAGAMENTO*/
 #divResumoPag{
