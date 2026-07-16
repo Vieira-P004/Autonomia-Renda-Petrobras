@@ -18,11 +18,33 @@ const fObjItem = (objProduto) => {
 //console.log("indice do array --->", itensCarrinho.findIndex(elem => elem.id_produto == 1))
 
 //FUNCAO PARA ADICIONAR O ITEM NO ARRAY
-const addItem = (objItem) => {
+/*const addItem = (objItem) => {
     itensCarrinho.push(fObjItem(objItem))
     //to alterando
 
     localStorage.setItem('itensSessao', JSON.stringify(itensCarrinho))
+}*/
+
+const addItem = (objItem) => {
+    console.log("Chamou item")
+    // Procura o produto pelo id
+    const indice = itensCarrinho.findIndex(
+        elem => elem.id_produto === objItem.id_produto
+    );
+
+    if (indice !== -1) {
+        // Produto já existe: aumenta a quantidade
+        itensCarrinho[indice].quantidade++;
+        
+    } else {
+        // Produto não existe: adiciona ao carrinho
+        itensCarrinho.push(fObjItem(objItem));
+    }
+
+    localStorage.setItem(
+        'itensSessao',
+        JSON.stringify(itensCarrinho)
+    );
 }
 
 //Listar itens do carrinho
