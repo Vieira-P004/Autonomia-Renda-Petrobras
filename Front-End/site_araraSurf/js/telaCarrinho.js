@@ -44,6 +44,24 @@ const montaTelaCarrinho = () => {
         
         });
 
+        const semNumNegativo = sectionItem.querySelector(`#quant${i}`)
+
+        semNumNegativo.addEventListener('input', () => {
+            const quantidade = Number(semNumNegativo.value)
+
+            if(!Number.isInteger(quantidade) || quantidade < 1){
+                alert('A quantidade deve ser um número inteiro maior que zero.')
+
+                quantidade = 1
+                semNumNegativo.value = 1
+            }
+
+            elem.quantidade = quantidade;
+
+            const subTotal = quantidade * elem.valor_unitario;
+            sectionItem.querySelector('.tot-item').textContent = `R$ ${subTotal.toFixed(2)}`
+        })
+
         sectionItem.appendChild(imgRemover)
         sectionItensCarrinho.appendChild(sectionItem)
     });
