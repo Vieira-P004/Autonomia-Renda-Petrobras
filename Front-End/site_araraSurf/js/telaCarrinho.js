@@ -14,9 +14,8 @@ const montaTelaCarrinho = () => {
         alt= ${elem.descricao_Produto} class="img-item" />
         <p class = "descricao" > ${elem.descricao_Produto}</p>
          <p class = "vlr-unitario">R$ ${elem.valor_unitario}</p> 
-         <input type = "number" name ='quant${i}' id= 'quant${i}' class="input-item" value="${elem.quantidade}"> 
-         <p class= "tot-item">R$ ${(elem.valor_unitario * elem.quantidade.toFixed(2))} </p>
-        <img src = "/img/icones/remover.png" alt ="img-remover" class="img-remover"`
+         <input type = "number" name ='quant${i}' id= 'quant${i}' class="input-item" value=${elem.quantidade}> 
+         <p class= "tot-item">R$ ${(elem.valor_unitario * elem.quantidade).toFixed(2)} </p>`
         
         const imgRemover = document.createElement('img')
         imgRemover.setAttribute('src','/img/icones/remover.png')
@@ -29,12 +28,42 @@ const montaTelaCarrinho = () => {
             }
         })
 
+        const inputQuantidade = sectionItem.querySelector(`#quant${i}`)
+        inputQuantidade.addEventListener('change', (e) => {
+            if(quantidade < 1 || isNaN(quantidade)){
+                quantidade = 1
+                e.target.value = 1
+            }
+
+            elem.quantidade = quantidade
+
+            const itens = listItens()
+            itens[i].quantidade = quantidade
+            localStorage.setItem('itensSessao', JSON.stringify(itens))
+        })
+
+
+        //TESTANDO SETA PARA ADD QUANT DE ITENS
+        const setaParaAdd = document.createElement('.input-item')
+        setaParaAdd.addEventListener('keyup', (event) => {
+
+            if(event.key === 'ArrowUp'){
+                elem.quantidade = elem.quantidade++
+                console.log(elem.quantidade)
+            }
+        })
+
+
+
+        sectionItem.appendChild(inputQuantidade)
         sectionItem.appendChild(imgRemover)
 
         sectionItensCarrinho.appendChild(sectionItem)
     });
 
 }
+
+
 
 const removerItemCarrinho = (pos)=>{
     removerItem(pos)

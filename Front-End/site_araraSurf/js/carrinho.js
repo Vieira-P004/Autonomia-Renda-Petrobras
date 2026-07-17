@@ -18,15 +18,7 @@ const fObjItem = (objProduto) => {
 //console.log("indice do array --->", itensCarrinho.findIndex(elem => elem.id_produto == 1))
 
 //FUNCAO PARA ADICIONAR O ITEM NO ARRAY
-/*const addItem = (objItem) => {
-    itensCarrinho.push(fObjItem(objItem))
-    //to alterando
-
-    localStorage.setItem('itensSessao', JSON.stringify(itensCarrinho))
-}*/
-
 const addItem = (objItem) => {
-    console.log("Chamou item")
     // Procura o produto pelo id
     const indice = itensCarrinho.findIndex(
         elem => elem.id_produto === objItem.id_produto
@@ -41,9 +33,7 @@ const addItem = (objItem) => {
         itensCarrinho.push(fObjItem(objItem));
     }
 
-    localStorage.setItem(
-        'itensSessao',
-        JSON.stringify(itensCarrinho)
+    localStorage.setItem('itensSessao',JSON.stringify(itensCarrinho)
     );
 }
 
