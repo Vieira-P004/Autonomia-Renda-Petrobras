@@ -28,42 +28,27 @@ const montaTelaCarrinho = () => {
             }
         })
 
-        const inputQuantidade = sectionItem.querySelector(`#quant${i}`)
-        inputQuantidade.addEventListener('change', (e) => {
-            if(quantidade < 1 || isNaN(quantidade)){
-                quantidade = 1
-                e.target.value = 1
-            }
 
-            elem.quantidade = quantidade
+        //VALOR SOBE PELO INPUT
+        const inputQuantidade = sectionItem.querySelector(`#quant${i}`);
+        inputQuantidade.addEventListener("input", () => {
 
-            const itens = listItens()
-            itens[i].quantidade = quantidade
-            localStorage.setItem('itensSessao', JSON.stringify(itens))
-        })
+            const quantidade = Number(inputQuantidade.value);
+        
+            elem.quantidade = quantidade;
+              
+            const subtotal = quantidade * elem.valor_unitario;
 
+            sectionItem.querySelector(".tot-item").textContent =
+                `R$ ${subtotal.toFixed(2)}`;
+        
+        });
 
-        //TESTANDO SETA PARA ADD QUANT DE ITENS
-        const setaParaAdd = document.createElement('.input-item')
-        setaParaAdd.addEventListener('keyup', (event) => {
-
-            if(event.key === 'ArrowUp'){
-                elem.quantidade = elem.quantidade++
-                console.log(elem.quantidade)
-            }
-        })
-
-
-
-        sectionItem.appendChild(inputQuantidade)
         sectionItem.appendChild(imgRemover)
-
         sectionItensCarrinho.appendChild(sectionItem)
     });
 
 }
-
-
 
 const removerItemCarrinho = (pos)=>{
     removerItem(pos)
