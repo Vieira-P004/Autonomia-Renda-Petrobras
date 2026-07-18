@@ -14,8 +14,6 @@ const fObjItem = (objProduto) => {
     return item
 }
 //PEGANDO O INDICE DO ARRAY
-//FINDINDEX RETORNA A POSIÇÃO DO ARRAY
-//console.log("indice do array --->", itensCarrinho.findIndex(elem => elem.id_produto == 1))
 
 //FUNCAO PARA ADICIONAR O ITEM NO ARRAY
 const addItem = (objItem) => {
@@ -44,21 +42,6 @@ const listItens = () => {
     //const itensSelecionados = JSON.parse(sessionStorage.getItem('itensSessao')) || []
     return itensSelecionados
 }
-
-const semNumNegativo = sectionItem.querySelector(`#quant${i}`)
-
-semNumNegativo.addEventListener('input', () => {
-    const quantidade = Number(semNumNegativo.value)
-
-    if(!Number.isInteger(quantidade) || quantidade < 1){
-        alert('0?? Voce vai comprar!!')
-    }
-
-    elem.quantidade = quantidade;
-
-    const subTotal = quantidade * elem.valor_unitario;
-    sectionItem.querySelector('.tot-item').textContent = `R$ ${subTotal.toFixed(2)}`
-})
 
 //REMOVER ELEMENTO
 const removerItem = (pos)=>{

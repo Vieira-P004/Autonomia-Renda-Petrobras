@@ -60,7 +60,7 @@
 }
 
 #menu a:hover{
-    font-size: 1.6em;
+    font-size: 1.4em;
     text-decoration: none;
     color: var(--areia);
 }
@@ -183,11 +183,8 @@
 
 #nav-secoes{
     background-color: var(--azul);
-    display: flex;
-    text-align: center;
     margin-bottom: 20px;
     padding: 25px;
-    align-items: center;
 }
 
 #menu-secoes{
@@ -201,6 +198,13 @@
     text-decoration: none;
     color: #ffffff;
     font-size: 1.3em;
+    margin-left: 100px;
+}
+
+.lnk-secao:hover{
+    font-size: 1.4em;
+    text-decoration: none;
+    color: var(--areia);
 }
 
 #paiDeTodos{

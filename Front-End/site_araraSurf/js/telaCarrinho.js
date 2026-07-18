@@ -31,10 +31,16 @@ const montaTelaCarrinho = () => {
 
         //VALOR SOBE PELO INPUT
         const inputQuantidade = sectionItem.querySelector(`#quant${i}`);
-        inputQuantidade.addEventListener("input", () => {
+        inputQuantidade.addEventListener("change", () => {
 
-            const quantidade = Number(inputQuantidade.value);
+            let quantidade = Number(inputQuantidade.value);
         
+            if(quantidade < 1){
+                alert('Não é permitido valor menor que 1.')
+                quantidade = 1
+                inputQuantidade.value = 1
+            }
+
             elem.quantidade = quantidade;
               
             const subtotal = quantidade * elem.valor_unitario;
