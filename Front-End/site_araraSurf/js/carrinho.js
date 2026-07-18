@@ -45,6 +45,21 @@ const listItens = () => {
     return itensSelecionados
 }
 
+const semNumNegativo = sectionItem.querySelector(`#quant${i}`)
+
+semNumNegativo.addEventListener('input', () => {
+    const quantidade = Number(semNumNegativo.value)
+
+    if(!Number.isInteger(quantidade) || quantidade < 1){
+        alert('0?? Voce vai comprar!!')
+    }
+
+    elem.quantidade = quantidade;
+
+    const subTotal = quantidade * elem.valor_unitario;
+    sectionItem.querySelector('.tot-item').textContent = `R$ ${subTotal.toFixed(2)}`
+})
+
 //REMOVER ELEMENTO
 const removerItem = (pos)=>{
     itensCarrinho.splice(pos, 1)

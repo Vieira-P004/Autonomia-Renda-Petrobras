@@ -7,6 +7,8 @@
     <link rel="shortcut icon" href="/img/icones/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/cadastro.css">
     <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/js/consulta_cep.js" defer></script>
 </head>
 <body>
     <main id="geral">
@@ -55,7 +57,7 @@
             <input type="text" name="nome" id="nome" class="input01" required>
 
             <label for="cpf">CPF</label>
-            <input type="number" name="CPF" id="CPF" maxlength="14" class="input02" required>
+            <input type="text" name="CPF" id="CPF" maxlength="14" class="input02" required>
 
             <label for="dataNasc">Data Nascimento</label>
             <input type="date" name="dataNasc" id="dataNasc" class="input01" required>
@@ -65,14 +67,14 @@
             <input type="radio" name="sexo" id="sxM" required value="M">Masculino
 
             <label for="cep">CEP</label>
-            <input type="number" name="cep" id="cep" required maxlength="9"> 
+            <input type="text" name="cep" id="cep" required maxlength="9"> 
 
             <div id="dadosEndereco" class="oculto">
                 <label for="logradouro">logradouro</label>
                 <input type="text" name="logradouro" id="logradouro" class="input01">
 
                 <label for="numResidencia">Número</label>
-                <input type="text" name="nem" id="logradouro" class="input01">
+                <input type="text" name="numResidencia" id="numResidencia" class="input01">
 
                 <label for="logradouro">Complemento</label>
                 <input type="text" name="logradouro" id="logradouro" class="input01">
