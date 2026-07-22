@@ -4,8 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro Cliente</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+    <div>
+        <h1>Cadastro de Cliente</h1>
+        <p>Preencha os dados abaixo para criar sua conta</p>
+        <hr>
+        <form action="">
+            <strong>Dados Pessoais</strong>
+
+            <label>Nome completo</label>
+            <input type="text" name="dadoNome" placeholder="digite seu nome">
+
+            <label for="">CPF</label>
+            <input type="text" name="dadoCpf">
+
+            <label for="">E-mail</label>
+            <input type="email" name="dadoEmail" placeholder="seuemail@email.com">
+
+            <label for="">Telefone</label>
+            <input type="tel" name="dadoTelefone" placeholder="(79) 99999 - 9999"> 
+
+            <label for="">Data de Nascimento</label>
+            <input type="date" name="dadoNascimento" placeholder="dd/mm/aaaa">
+
+            <Strong>Endereço</Strong>
+
+            <label for="">CEP</label>
+            <input type="text" name="cep" placeholder="00000-000">
+
+            <button> <i class="fa-solid fa-magnifying-glass"></i> Buscar CEP</button>
+  
+
+            <label for="">Rua</label>
+            <input type="text" name="logradouro" placeholder="Digite sua rua">
+
+            <label for="">Número</label>
+            <input type="number" name="numero" placeholder="Digite seu número">
+
+            <label for="">Bairro</label>
+            <input type="text" name="bairro" placeholder="Digite seu bairro">
+
+            <label for="">Cidade</label>
+            <input type="text" name="cidade" placeholder="Digite sua cidade">
+
+            <label for="">Estado</label>
+            <select name="" id="">
+                <option value="Al">Al</option>
+                <option value="Al">Al</option>
+                <option value="Al">Al</option>
+                <option value="Al">Al</option>
+                <option value="Al">Al</option>
+                <option value="Al">Al</option>
+                <option value="Al">Al</option>
+                <option value="Al">Al</option>
+                <option value="Al">Al</option>
+                <option value="Al">Al</option>
+                <option value="Al">Sp</option>
+                <option value="Al">Se</option>
+                <option value="Al">Al</option>
+            </select>
+        </form>
+    </div>
 </body>
 </html>
