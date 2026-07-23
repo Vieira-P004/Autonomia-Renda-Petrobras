@@ -11,9 +11,16 @@ MONITOR: marca, modelo, ano de fabricação e descrição.
 ###### Como vai ser utilizado seu objeto?
 Interface e Type
 
-`Interface` : é usada principalmente para definir formato de objetos e classes.
+`Interface` : é um recurso usada principalmente para definir formato que o objeto deve ter. <br>
+Ela diz : qualquer objeto do tipo `moto` dve possuir uma `marca`(string) e um `kmRodado`(number)
 
-`Type`: também pode definir um objeto, mas é mais versátil.
+`Type`: Faz a mesma coisa do `interface`, mas qual a diferença? <br>
+É mais flexível <br>
+Foi criada para descrever a estrutura de objetos e classe. <br>
+
+###### quando usar?
+`interface`: quando voc~e quer definir a estrutura de um oubjeto ou  de uma classe.
+`type`: quando precisa de mais flexibilidade ou quer criar tipos que não são apenas objetos
 
 ###### Escolha um nome para o objeto
 ```ts
@@ -29,10 +36,20 @@ interface moto = {
 ```
 ###### Adicione as propriedades e seus valores
 ```ts
-interface moto = {
+interface Moto = {
+    //Propriedades
+    marca: string,
+    modelo: string,
+    ano: number,
+    kmRodado: number
+}
+
+const motoMatheus:Moto = {
+    //valores
     marca: "Honda",
     modelo: "Twister",
-    ano: 2025
+    ano: 2025,
+    kmRodado: 13.000
 }
 ```
 ## Como chamar os métods criados?
