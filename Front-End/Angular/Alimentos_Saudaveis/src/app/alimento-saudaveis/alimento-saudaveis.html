@@ -1,0 +1,26 @@
+<div id="divGeral">
+    <h2>Cadastro Produto</h2>
+  
+    <form id="formulario">
+      <label for="nomeProduto">Nome do Produto</label>
+      <input type="text" name="nomeProduto" id="nomeProduto" placeholder="Nescau" [(ngModel)] = "nomeProduto">
+  
+      <label for="valorProduto">Valor do Produto</label>
+      <input type="number" name="valorProduto" id="valorProduto" placeholder="10" [(ngModel)]= "valorProduto">
+  
+      <div id="btns">
+        <button type="button" (click)="addProduto()">Adicionar</button>
+      </div>
+    </form>
+    </div>
+
+    <div id="lista">
+      <div class="produto">
+        @for(element of listaAlimentos; track element.idProduto){
+          <div class="produto">{{element.idProduto}} - {{element.nomeProduto}} - R$ {{element.valorUnitario}}</div>
+        }@empty{
+          <div class="produto">NENHUM PRODUTO ENCONTRADO</div>
+        }
+      </div>
+
+  </div>
