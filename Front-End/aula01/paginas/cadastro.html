@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário HTML</title>
+    <link rel="stylesheet" href="/css/styleForm.css">
+</head>
+<body>
+    <div id="div-form">
+        <form name="formPessoa" id="formPessoa" method="post">
+
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" class="inputTxt01" maxlength="5" required>
+
+            <label for="cpf">CPF</label>
+            <input type="number" name="cpf" id="cpf" class="inputTxt02" maxlength="14" required placeholder="Informe o CPF">
+
+            <label for="cpf">CPF</label>
+            <input type="text" name="cpf" id="cpf" class="inputTxt02" maxlength="14" required pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" placeholder="000.000.000-00">
+
+            <label for="sexo">Sexo</label>
+            <input type="radio" name="sexo" id="sxF" class="inputRadio" required value="F"> Feminino
+            <input type="radio" name="sexo" id="sxM" class="inputRadio" required value="M"> Masculino
+
+            <select name="estado" id="estado" class="estado">
+                <option value="Al">Alagoas</option>
+                <option value="Ba">Bahia</option>
+                <option value="Pe">Pernambuco</option>
+                <option value="Pb">Paraíba</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="Ce">Ceará</option>
+                <option value="Pi">Piauí</option>
+                <option value="Ma">Maranhão</option>
+                <option value="Se">Sergipe</option>
+            </select>
+
+            <label for="preferencias">Preferências</label>
+            <input type="checkbox" name="estudo" class="inputCheck" id="estudo" value="Estudo"> Estudo <!--VALUE VAI PARA O BANCO DE DADOS-->
+            <input type="checkbox" name="viagem" class="inputCheck" id="viagem" value="Viagem"> Viagem
+            <input type="checkbox" name="trabalho" class="inputCheck" id="trabalho" value="Trabalho"> Trabalho
+            <input type="checkbox" name="compras" class="inputCheck" id="compras" value="Compras"> Compras
+
+            <label for="comentario">Comentário</label>
+            <textarea name="comentario" id="comentario" placeholder="Digite seu comentário"></textarea>
+
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" class="inputTxt02" required placeholder="Informe uma senha" maxlength="6">
+
+            <label for="dataNascimento"></label>
+            <input type="date" name="dataNascimento" id="dataNascimento" class="inputTxt02" required>
+
+            <label for="quantidade">Quantidade</label>
+            <input type="range" name="quantidade" id="quantidade" class="inputTxt02" min="0" max="10" value="6">
+
+            <div id="divBtns">
+                <button type="submit" id="btnEnviar" class="btn">Enviar</button>
+                <button type="reset" id="btnLimpar" class="btn">Limpar</button>
+                <button id="btn" class="btn">Botão</button>    
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>

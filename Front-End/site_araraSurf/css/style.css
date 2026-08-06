@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /*FECHA UM TAMANHO*/
+    font-family: Roboto;
+}
+
+:root{
+    --azul: #0077B6;
+    --turquesa: #00B4D8;
+    --branco: #ffffff;
+    --areia: #F4E1C1;
+}
+
+#cabecalho{
+    background-color: var(--azul);
+    width: 100%; /*ESTÁ 100% DA LARGURA*/
+    padding: 5px 25px;
+    display: flex;
+    justify-content: space-between; /*SÓ FUNCIONA QUANDO O DISPLAY TÁ FLEX*/
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#logo img{
+    width: 250px;
+}
+
+#menu{
+    color: var(--branco);
+    width: 600px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cabecalho ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+#divIcons img{
+    width: 30px;
+}
+
+#menu a:link{
+    font-size: 1.3em;
+    text-decoration: none;
+    color: var(--branco);
+} 
+
+#menu a:visited{
+    font-size: 1.3em;
+    text-decoration: none;
+    color: var(--branco);
+}
+
+#menu a:hover{
+    font-size: 1.4em;
+    text-decoration: none;
+    color: var(--areia);
+}
+
+#pesquisa{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+#pesquisa input{
+    width: 60%;
+    height: 60px;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 2em;
+}
+
+#cards{
+    width: 900px;
+    min-height: 600px;
+    margin: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.card{
+    width: 250px;
+    min-height: 200px;
+    box-shadow: 0 10px 25px rgba(0, 94, 145, 0.466);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.card:hover{
+    transform:  translateY(-5px);
+}
+
+.card img{
+    width: 100%;
+    
+}
+
+.card h2{
+    letter-spacing: 3px;
+    margin: 10px 0px;
+}
+
+.card h3{
+    margin: 20px 0px;
+}
+
+.card button{
+    width: 100%;
+    height: 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.card button:hover{
+    background-color: var(--turquesa);
+}
+
+.card img{
+    width: 100%;
+}
+
+#rodape{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azul);
+    margin-top: 20px;
+}
+
+#dadoLoja{
+    font-size: 0.8em;
+}
+
+#iconSociais ul{
+    list-style: none;
+}
+
+#iconSociais img{
+    width: 20px;
+    height: 20px;
+    margin-left: 50px;
+}
+
+#cartao img{
+    width: 25px;
+    height: 25px;
+}
+
+#compra{
+    width: 250px;
+    display: flex;
+    
+}
+
+.colunaTotal{
+   background-color: #F4E1C1;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border: 1px solid;
+   padding: 30px;
+}   
+
+#nav-secoes{
+    background-color: var(--azul);
+    margin-bottom: 20px;
+    padding: 25px;
+}
+
+#menu-secoes{
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+    list-style: none;
+}
+
+.lnk-secao{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.3em;
+    margin-left: 100px;
+}
+
+.lnk-secao:hover{
+    font-size: 1.4em;
+    text-decoration: none;
+    color: var(--areia);
+}
+
+#paiDeTodos{
+   margin: auto;
+}

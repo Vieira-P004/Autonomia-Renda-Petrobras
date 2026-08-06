@@ -1,0 +1,11 @@
+#geral{
+    width: 700px;
+    min-height: 600px;
+    margin: 20px auto;
+    border: 2px;
+}
+
+#formulario{
+    padding: 5px;
+}
+

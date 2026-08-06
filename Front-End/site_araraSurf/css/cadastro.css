@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /*FECHA UM TAMANHO*/
+    font-family: Roboto;
+}
+
+:root{
+    --azul: #0077B6;
+    --turquesa: #00B4D8;
+    --branco: #ffffff;
+    --areia: #F4E1C1;
+}
+
+#logo img{
+    width: 250px;
+}
+
+#menu{
+    color: var(--branco);
+    width: 600px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cabecalho ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+#divIcons img{
+    width: 30px;
+}
+
+#menu a:link{
+    font-size: 1.3em;
+    text-decoration: none;
+    color: var(--branco);
+} 
+
+#menu a:visited{
+    font-size: 1.3em;
+    text-decoration: none;
+    color: var(--branco);
+}
+
+#menu a:hover{
+    font-size: 1.6em;
+    text-decoration: none;
+    color: var(--areia);
+}
+
+/*==================FORMS=================*/
+#form{
+    width: 1000px;
+    min-height: 600px;
+    padding: 20px;
+    border: 1px solid var(--azul);
+    margin: auto;
+}
+
+#form h1, h5{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px 0px;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.input01, .input02{
+    font-size: 1.3em; 
+    padding: 5px;
+}
+
+.input01{
+    width: 450px;
+}
+
+.input02{
+    width: 400px;
+}
+
+#btnDiv{
+    height: 60px;
+    margin: 40px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btnDiv button{
+    width: 200px;
+    height: 40px;
+    margin-left: 20px;
+    background-color: var(--turquesa);
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 0.8em;
+    letter-spacing: 5px;
+}
+
+.oculto{
+    display: none;
+}
+
+/*=================RODAPÉ=================*/
+#rodape{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azul);
+}
+
+#dadoLoja{
+    font-size: 0.8em;
+}
+
+#iconSociais ul{
+    list-style: none;
+}
+
+#iconSociais img{
+    width: 25px;
+    height: 25px;
+    margin-left: 50px;
+}
+
+#cartao img{
+    width: 25px;
+    height: 25px;
+}

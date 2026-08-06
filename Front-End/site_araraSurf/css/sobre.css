@@ -1,0 +1,19 @@
+:root{
+    --azul: #0077B6;
+    --turquesa: #00B4D8;
+    --branco: #ffffff;
+    --areia: #F4E1C1;
+}
+
+
+#sobreQm{
+    background-color: var(--turquesa);
+    width: 600px;
+    margin: auto;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#sobreQm p{
+    font-size: 1.2em;
+}

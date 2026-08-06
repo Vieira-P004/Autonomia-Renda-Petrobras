@@ -1,0 +1,86 @@
+:root{
+    --azul: #0077B6;
+    --turquesa: #00B4D8;
+    --branco: #ffffff;
+    --areia: #F4E1C1;
+}
+
+#secGeral{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+.img-item{
+    width: 80px;
+}
+
+.img-remover{
+    width: 20px;
+}
+
+#navCompras{
+    width: 1300px;
+}
+
+.cardCompras{
+    box-shadow: 0 10px 25px rgba(0, 94, 145, 0.466);
+    border-radius: 8px;
+    width: 59%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.cardCompras input{
+    width: 50px;
+    height: 30px;
+}
+
+.cardCompras .img-remover{
+    width: 30px;
+    height: 20px;
+}
+
+/* CARD PAGAMENTO*/
+#divResumoPag{
+    width: 250px;
+    height: 580px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 3);
+    padding: 10px;
+}
+
+h5{
+    padding-top: 15px;
+}
+
+hr{
+    color: rgb(187, 186, 186);
+    width: 220px;
+    margin-top: 15px;
+}
+
+#cepBtn{
+    background-color: var(--azul);
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 8px;
+    margin-top: 10px;
+
+}
+
+input{
+    border-radius: 8px;
+    padding: 8px;
+}
+
+#btnFinalizarCompra{
+    background-color: var(--azul);
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 8px;    
+    margin-top: 10px;
+}

@@ -1,0 +1,22 @@
+input{
+    width:150px; 
+    padding:10px;
+    margin:5px;
+}
+    
+.btn{ 
+    padding:10px;
+    margin:5px;
+    cursor:pointer;
+    background-color: rgb(4, 141, 204);
+    color: #ffffff;
+}
+
+.btn:hover{
+    background-color: rgb(34, 34, 88);
+    color: #ffffff;
+}
+    
+h2{
+    color:blue;
+}

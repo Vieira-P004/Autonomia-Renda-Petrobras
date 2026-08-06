@@ -1,0 +1,1 @@
+const formulario = document.querySelector("form") //DOCUMENT = HTML | QUERYSELECTOR = PROCURA O ELEMENTO USANDO O MESMO SELETOR DO CSS

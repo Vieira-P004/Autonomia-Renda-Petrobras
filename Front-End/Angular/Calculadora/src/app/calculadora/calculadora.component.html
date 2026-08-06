@@ -1,0 +1,24 @@
+    <div>
+        <form id="formulario">
+            <h2>Calculadora</h2>
+            <input type="number" name="numero1" id="numero1" [(ngModel)]="numeros1">
+
+            <br> <br>
+
+            <!-- [(ngModel)] = Faz a ligação entre o HTML e a variável TypeScript-->
+            <input type="number" name="numero2" id="numero2" [(ngModel)]="numeros2">
+
+            <br><br>
+
+            <button class="btn" (click)="somar()">+</button>
+
+            <button class="btn" (click)="subtrair()">-</button>
+    
+            <button class="btn" (click)="multiplicar()">*</button>
+    
+            <button class="btn" (click)="dividir()">/</button>
+
+            <h2> Resultado: {{resultado}} </h2>
+        </form>
+
+    </div>
