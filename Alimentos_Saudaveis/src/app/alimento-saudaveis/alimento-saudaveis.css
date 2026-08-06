@@ -1,0 +1,54 @@
+#divGeral{
+    background-color: var(--Botoes);
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 450px; 
+}
+
+h2{
+    color: var(--fundo);
+    text-align: center;
+    margin-top: 50px;
+}
+
+#formulario{
+    margin: auto;
+}
+
+label{
+    display: block;
+    color: var(--fundo);
+}
+
+input{
+    margin-bottom: 10px;
+    border-radius: 6px;
+
+}
+
+button{
+    background-color: var(--Secundaria);
+    border: none;
+    border-radius: 6px;
+    color: var(--fundo);
+    width: 90px;
+    height: 30px;
+   
+    
+}
+
+#lista{
+    margin-top: 20px;
+    text-align: center;
+    border: 1px solid;
+    width: 450px;
+    height: auto;
+    min-height: 300px;
+     background-color: var(--Principal);
+}
+
+.produto{
+    color: var(--fundo);
+}
