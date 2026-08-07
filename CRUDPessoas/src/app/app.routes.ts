@@ -20,7 +20,7 @@ export const routes: Routes = [
 
     },
     {
-        path: 'Lista',
+        path: 'lista',
         component:Lista
     }
 ];
